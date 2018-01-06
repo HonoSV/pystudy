@@ -13,7 +13,7 @@ class Student(object):
     def get_grade(self):
         if self.__score >= 90:
             return 'A'
-        elif self.__score >=60:
+        elif self.__score >= 60:
             return 'B'
         else:
             return 'c'
@@ -22,9 +22,9 @@ class Student(object):
         return self.__name
 
     def get_score(self):
-        return self.get_score()
+        return self.__score
 
-    def set_score(self,score):
+    def set_score(self, score):
         if 0 <= score <= 100:
             self.__score = score
         else:
@@ -32,8 +32,11 @@ class Student(object):
 
 
 bart = Student('Bart Simpson', 59)
-lisa = Student('Lisa Simpson',87)
+lisa = Student('Lisa Simpson', 87)
 bart.print_score()
 lisa.print_score()
 
-print(lisa.get_name(),lisa.get_grade())
+print(lisa.get_name(), lisa.get_grade())
+
+# print(bart._Student__name)
+
